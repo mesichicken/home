@@ -87,5 +87,9 @@
     margin-top: 50px;
     margin-bottom: 10px;
   }
+
+  .hobby-image{
+    width: 100%;
+  }
 }
 </style>
