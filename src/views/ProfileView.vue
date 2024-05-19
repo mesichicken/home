@@ -5,13 +5,37 @@
     </p>
     <img src="@/assets/mesi.png" class="icon" />
     <h2>経歴</h2>
-    <div class="career">
+    <div class="career normal-font">
       <p>
         1995年2月24日生まれ。<br>
         2015年4月に2浪して名古屋大学に入学。<br>
         ITとは全く関係がない学科であったが、在学中にWordPressでブログを開設したことがきっかけでWebに興味を持ち始める。<br>
         2019年3月に卒業後、専門学校で2年ほどWebサイトについて学ぶ。<br>
         2021年4月に横浜の会社に入社し、Webエンジニアとして働いている。
+      </p>
+    </div>
+
+    <h2>スキル</h2>
+    <div class="skill normal-font">
+      <p>
+        <ul>
+          <li>JavaScript</li>
+          <li>Vue.js</li>
+          <li>Nuxt</li>
+          <li>Ruby</li>
+          <li>Rails</li>
+          <li>PHP</li>
+          <li>Java</li>
+        </ul>
+      </p>
+    </div>
+
+    <h2>趣味</h2>
+    <div class="hobby normal-font">
+      <p>
+        デスクづくりと技術書が好き。<br>
+        <img src="@/assets/images/desk.jpg" class="hobby-image" />
+        <img src="@/assets/images/books.jpeg" class="hobby-image" />
       </p>
     </div>
 
@@ -33,8 +57,14 @@
   display: block;
 }
 
-.career{
+.normal-font{
   font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+}
+
+.hobby-image{
+  display: block;
+  width: 500px;
+  margin-top: 10px;
 }
 
 .sns{
