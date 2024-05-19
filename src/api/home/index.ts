@@ -3,6 +3,7 @@ import axios from "axios"
 class Get {
   public async execute() {
     const baseUrl = import.meta.env.VITE_API_URL; // 環境変数からベース URL を取得
+    console.log(baseUrl)
     const response = await axios.get(
       `${baseUrl}/articles?username=mesi&order=latest`,
       {
@@ -11,7 +12,6 @@ class Get {
         },
       }
     )
-    console.log(response)
     return response.data.articles.map((blog: any) => {
       return {
         id: blog.id,
