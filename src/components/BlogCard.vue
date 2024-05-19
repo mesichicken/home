@@ -92,9 +92,6 @@ a:hover {
 
 /* タブレット */
 @media screen and (max-width: 1024px) {
-  .card {
-    width: 100%;
-  }
 }
 
 /* スマホ */

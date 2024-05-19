@@ -4,30 +4,32 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <div class="site">
-    <header>
-      <RouterLink class="title-link" to="/" >
-        <div class="title">
-          <img src="@/assets/mesi.png" class="icon" />
-          <h1>mesiホーム</h1>
+    <div class="wrapper">
+      <header>
+        <RouterLink class="title-link" to="/" >
+          <div class="title">
+            <img src="@/assets/mesi.png" class="icon" />
+            <h1>mesiホーム</h1>
+          </div>
+        </RouterLink>
+
+        <div class="nav">
+          <RouterLink to="/" >
+            <button class="nes-btn is-warning">ブログ</button>
+          </RouterLink>
+          <RouterLink to="/me" >
+            <button class="nes-btn is-warning">プロフィール</button>
+          </RouterLink>
         </div>
-      </RouterLink>
+      </header>
 
-      <div class="nav">
-        <RouterLink to="/" >
-          <button class="nes-btn is-warning">ブログ</button>
-        </RouterLink>
-        <RouterLink to="/me" >
-          <button class="nes-btn is-warning">プロフィール</button>
-        </RouterLink>
+      <div class="main-content">
+        <RouterView />
       </div>
-    </header>
 
-    <div class="main-content">
-      <RouterView />
-    </div>
-
-    <div class="footer">
-      <p>© 2024 mesi</p>
+      <div class="footer">
+        <p>© 2024 mesi</p>
+      </div>
     </div>
   </div>
 </template>
@@ -37,14 +39,21 @@ import { RouterLink, RouterView } from 'vue-router'
   background-color: #5ca8cf;
   color: white;
   font-family: "NuKinakoMochiRegFont";
-  padding: 0 20%;
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-flow: column;
+  justify-content: center;
 }
+
+.wrapper {
+  width: 1080px;
+
+}
+
 .main-content {
   flex: 1;
 }
+
 header {
   padding: 15px;
   display: flex;
@@ -52,14 +61,17 @@ header {
   justify-content: space-between;
   border-bottom: black solid 1px;
 }
+
 .nes-btn {
   margin-top: 10px;
   margin-left: 20px;
 }
+
 .title-link{
   text-decoration: none;
   color: inherit;
 }
+
 .title{
   display: flex;
   font-size: 20px;
@@ -71,6 +83,7 @@ header {
     margin-right: 10px;
   }
 }
+
 .footer{
   text-align: center;
 }
