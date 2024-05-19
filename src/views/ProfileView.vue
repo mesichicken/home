@@ -1,7 +1,7 @@
 <template>
   <div class="profile">
     <p class="nes-balloon from-left nes-pointer is-dark">
-      よわよわエンジニア4年目。技術書が好きです。
+      MESIと申します。開発がしたいです。
     </p>
     <img src="@/assets/mesi.png" class="icon" />
     <h2>経歴</h2>
