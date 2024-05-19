@@ -2,9 +2,9 @@ import axios from "axios"
 
 class Get {
   public async execute() {
-    // 記事一覧を取得する
+    const baseUrl = import.meta.env.VITE_API_URL; // 環境変数からベース URL を取得
     const response = await axios.get(
-      "/api/articles?username=mesi&order=latest",
+      `${baseUrl}/articles?username=mesi&order=latest`,
       {
         headers: {
           "Content-Type": "application/json",
@@ -17,7 +17,7 @@ class Get {
         id: blog.id,
         title: blog.title,
         slug: blog.slug,
-        comments_clount: blog.comments_count,
+        comments_count: blog.comments_count,
         liked_count: blog.liked_count,
         body_letters_count: blog.body_letters_count,
         article_type: blog.article_type,
