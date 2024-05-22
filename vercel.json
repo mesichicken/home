@@ -3,6 +3,9 @@
     {
       "source": "/api/:path*",
       "destination": "https://zenn.dev/api/:path*"
+    },
+    {
+      "source": "/(.*)", "destination": "/index.html"
     }
   ],
   "headers": [
