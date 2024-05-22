@@ -1,21 +1,21 @@
 <template>
   <div class="profile">
     <p class="nes-balloon from-left nes-pointer is-dark">
-      MESIと申します。開発がしたいです。
+      どうもこんにちは。MESIと申します。
     </p>
     <img src="@/assets/mesi.png" class="icon" />
-    <h2>経歴</h2>
+    <h2>Career</h2>
     <div class="career normal-font">
       <p>
         1995年2月24日生まれ。<br>
         2015年4月に2浪して名古屋大学に入学。<br>
-        ITとは全く関係がない学科であったが、在学中にWordPressでブログを開設したことがきっかけでWebに興味を持ち始める。<br>
-        2019年3月に卒業後、専門学校で2年ほどWebサイトについて学ぶ。<br>
+        ITとは全く関係がない学科であったが、在学中にWordPressで<a href="https://mesiblog.com/" class="blog-link">ブログ</a>を開設したことがきっかけでWebに興味を持ち始める。<br>
+        2019年3月に大学卒業後、専門学校で2年ほどWebサイト開発について学ぶ。<br>
         2021年4月に横浜の会社に入社し、Webエンジニアとして働いている。
       </p>
     </div>
 
-    <h2>スキル</h2>
+    <h2>Skill</h2>
     <div class="skill normal-font">
       <p>
         <ul>
@@ -30,7 +30,7 @@
       </p>
     </div>
 
-    <h2>趣味</h2>
+    <h2>Hobby</h2>
     <div class="hobby normal-font">
       <p>
         デスクづくりと技術書が好き。<br>
@@ -51,6 +51,13 @@
 <style>
 .profile{
   margin-top: 100px;
+}
+
+.career {
+  .blog-link{
+    color: #fff;
+    text-decoration: underline
+  }
 }
 
 .nes-balloon{
