@@ -1,3 +1,9 @@
+<script setup lang="ts">
+const moveToWorkExperience = () => {
+  window.scrollTo(0, 0);
+}
+</script>
+
 <template>
   <div class="profile">
     <p class="nes-balloon from-left nes-pointer is-dark">
@@ -22,6 +28,10 @@
         2021年4月に横浜の会社に入社し、Webエンジニアとして働いている。
       </p>
     </div>
+
+    <RouterLink to="/work-experience" class="nes-btn is-warning" @click="moveToWorkExperience">
+      もっと知りたい
+    </RouterLink>
 
     <h2>スキル</h2>
     <div class="skill normal-font">
@@ -69,7 +79,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss" scoped>
 h2 {
   font-size: 24px;
   margin-top: 40px;
@@ -91,10 +101,6 @@ h2 {
 
 .nes-balloon{
   display: block;
-}
-
-.normal-font{
-  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
 }
 
 .hobby-image{
