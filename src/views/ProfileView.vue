@@ -38,6 +38,16 @@
       </p>
     </div>
 
+    <h2>ライセンス</h2>
+    <div class="license normal-font">
+      <p>
+        <ul>
+          <li>基本情報技術者</li>
+          <li>応用情報技術者</li>
+        </ul>
+      </p>
+    </div>
+
     <h2>どんなエンジニアか？</h2>
     <div class="engineer normal-font">
       <p>
