@@ -64,7 +64,8 @@ const moveToWorkExperience = () => {
         車輪の再発明が好きでフレームワークやOSの中身に興味がある。<br>
         そのため、簡易的なものを自作してみたりすることがある(内容は<a href="https://github.com/mesichicken" class="blog-link">Github</a>を参照)。<br>
         また技術書を読むことが多く、新しい技術を学ぶことが好き。<br>
-        定期的にZennで<a href="https://zenn.dev/mesi" class="blog-link">技術記事</a>を書いている。
+        定期的にZennで<a href="https://zenn.dev/mesi" class="blog-link">技術記事</a>を書いている。<br>
+        いろいろ手を出しすぎてどれも中途半端になりがちなのが悩み。
       </p>
     </div>
 
